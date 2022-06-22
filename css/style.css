@@ -99,18 +99,6 @@ body {
 	}
 }
 
-@media all and (max-width: 767px) {
-	.nav__actions li:nth-child(1), 
-	.nav__actions li:nth-child(2),
-	.nav__actions li:nth-child(3) {
-		display: none;
-	}	
-	.nav__actions {
-	min-width: 145px;
-	padding-left: 0;
-	}
-}
-
 @media all and (min-width: 1120px) {
 	 .nav
 	 {
@@ -147,7 +135,7 @@ body {
 	align-items: center;
 	min-width: 300px;
 }
-/*----Убираем видимость менб для экрана меньше 1120px----------------------------------------------------*/
+/*----Убираем видимость меню для экрана меньше 1120px----------------------------------------------------*/
 @media all and (max-width: 1119px) {
     .services__actions
     {
