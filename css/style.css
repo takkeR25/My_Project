@@ -1,13 +1,13 @@
 /*----подкдючаем шрифт----------------------------------------------------*/
 @font-face {
     font-family: 'TT Lakes';
-    src: url('fonts/TTLakes/TTLakes-Regular.ttf');
+    src: url('../fonts/TTLakes/TTLakes-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
 	font-family: 'TT Lakes';
-	src: url('fonts/TTLakes/TTLakes-DemiBold.ttf');
+	src: url('../fonts/TTLakes/TTLakes-DemiBold.ttf');
 	font-weight: bold;
 	font-style: normal;
 }
