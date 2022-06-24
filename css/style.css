@@ -28,7 +28,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background: black;
+	background: white;
 	min-width: 320px;
 	min-height: 85px;
 }
