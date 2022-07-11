@@ -1,0 +1,154 @@
+/*----подкдючаем шрифт----------------------------------------------------*/
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('fonts/TTLakes/TTLakes-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+font-family: 'TT Lakes';
+src: url('fonts/TTLakes/TTLakes-DemiBold.ttf');
+font-weight: bold;
+font-style: normal;
+}
+
+body {
+  font-family: 'TT Lakes';
+}
+.aside {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	background-color: white;
+	width: 320px;
+	height: 100%;
+	min-height: 620px;
+	box-shadow: 20px 0px 20px -10px #808080;
+}
+.aside__wrapper {
+	height: 100%;
+	padding: 0 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.aside__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+	min-height: 85px;
+}
+.aside__button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.aside__logo {
+  width: 180px;
+} 
+.aside ul {
+  padding-left: 0px;
+  list-style: none;
+}
+.aside__nav {
+  display: flex;
+  justify-content: flex-start;
+  flex-grow: 1;
+}
+.aside__nav ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	font-weight: normal;
+	height: 470px;
+	margin-top: 0px;
+	flex-shrink: 0;
+	flex-grow: 0;
+}
+.aside__nav ul li {
+  position: relative;
+}
+.aside__nav ul li a {
+	text-decoration: none;
+	color: inherit;
+}
+.aside__nav ul li:hover {
+	opacity: 0.5;
+	transition-duration: 0.4s;
+}
+.aside__nav ul li:hover::before {
+	display: inline-block;
+	background-image: url("img/highlightsmall.png"); 
+	vertical-align: middle;
+	content: "";
+	position: absolute;
+	left: -20px;
+	bottom: -25%;
+	width: 4px;
+	height: 32px;
+}
+.aside__actions ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 150px;
+}
+
+.aside__mail a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.aside__phone {
+	margin-top: 0.75em;
+	margin-bottom: 2em;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+.aside__phone a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.aside__lang ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 85px;
+  position:relative;
+  bottom: 20px	;
+}
+.aside__lang button {
+  font-size: 15px;
+}
+.aside__button_checked {
+	opacity: 0.6;
+}
+.aside__button_theme_line {
+	position: relative;
+	cursor: pointer;
+	line-height: 1;
+
+}
+.aside__button_theme_line:after {
+  position: relative;
+	cursor: pointer;
+	line-height: 1;
+	display: block;
+	position: absolute;
+	left: 0; 
+	width: 0;
+	height: 2px; 
+	background-color: #41f6d7; 
+	content: "";
+	transition: width 0.3s ease-out;
+}
+
+.aside__button_theme_line:hover:after,
+.aside__button_theme_line:focus:after {
+	width: 100%; 
+}
