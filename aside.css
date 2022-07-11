@@ -81,7 +81,7 @@ body {
 }
 .aside__nav ul li:hover::before {
 	display: inline-block;
-	background-image: url("img/highlightsmall.png"); 
+	background-image: url("img/aside/highlightsmall.png"); 
 	vertical-align: middle;
 	content: "";
 	position: absolute;
