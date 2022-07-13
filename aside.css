@@ -152,3 +152,16 @@ body {
 .aside__button_theme_line:focus:after {
 	width: 100%; 
 }
+
+@media screen and (max-height: 780px){
+	.aside__nav ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		font-weight: normal;
+		height: 100%;
+		margin-top: 0px;
+		flex-shrink: 1;
+		flex-grow: 1;
+	}
+}
