@@ -153,7 +153,7 @@ body {
 	width: 100%; 
 }
 
-@media screen and (max-height: 780px){
+@media screen and (max-height: 844px){
 	.aside__nav ul {
 		display: flex;
 		flex-direction: column;
