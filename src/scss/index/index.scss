@@ -1,0 +1,496 @@
+html {
+	overflow-x: hidden;
+}
+
+body {
+	font-family: 'TT Lakes';
+	min-width: 320px;
+	margin-right: 0px;
+	margin-left:  0px;
+	margin-top: 0px;
+	background: $white-color;
+}
+
+
+
+.wrapper-fullPage {
+	overflow-x: hidden;
+	position: relative;
+	width: auto;
+}
+
+@media all and (min-width: 1120px) {
+	.wrapper-fullPage {
+		display: flex;
+	}	
+	.aside__close {
+		display: none;
+	}
+	.wrapper {
+		padding-top: 15px;
+	}
+	.aside {
+		padding-top: 15px;
+	}
+}
+
+.wrapper-fullPage {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.wrapper {
+	max-width: 1120px;
+	min-width: 320px;
+	margin: 0 auto;
+}
+
+.main-wrapper {
+	max-width: 1120px;
+	min-width: 320px;
+	margin: 0 auto;
+	box-sizing: border-box;
+
+}
+
+.wrapper__blur {
+	filter: blur(2px);
+}
+
+.wrapper__blurFeedBack,
+.wrapper__blurCallBack {
+	filter: blur(2px);
+}
+
+
+@media all and (min-width: 768px) {
+	.main-wrapper {
+		padding: 0 0 0 40px;
+	}
+}
+
+
+@media all and (min-width: 768px) {
+	.header-menu {
+		padding: 0 0 0 40px;
+	}
+}
+
+/*----Стили Хедера и верхнего навигационного меню ----------------------------------------------------*/
+
+.header-menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: white;
+	min-width: 320px;
+	min-height: 85px;
+}
+
+
+@media all and (min-width: 768px) {
+	.header-menu__burger {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		min-width: 160px;
+	}	
+}
+
+@media all and (max-width: 767px) {
+	.header-menu__burger {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		min-width: 160px;
+		padding-left: 15px;
+		box-sizing: border-box;
+	}	
+}
+
+
+.header-menu__burger img:nth-child(2) {
+	margin-bottom: 5px;
+}
+
+@media all and (min-width: 768px) {
+	.header-menu__burger button:nth-child(1)::after
+	 {
+		display: inline-block;
+		align-self: center;
+	    content: "";
+	    width: 2px;
+		height: 30px;
+		background: $pale-blue-color;
+		margin: 0 4px 5px 18px;
+	}
+}
+
+@media all and (min-width: 768px) {
+	.header-menu__burger {
+		margin-left: -10px;	
+	}
+
+}
+
+.header-menu ul {
+	list-style: none;
+
+}
+
+.header-menu__actions li:nth-child(4)::before {
+		display: inline-block;
+		align-self: center;
+	    content: "";
+	    width: 2px;
+		height: 30px;
+		background: $pale-blue-color;
+		margin: 0 12px 5px 24px;
+}
+
+
+@media all and (min-width: 768px) {
+	.header-menu__actions li:nth-child(4)::before {
+	margin: 0 12px 5px 4px;			
+	}
+}
+
+.header-menu__actions li:nth-child(4) {
+	margin-right: 0px;
+}
+
+.header-menu__actions {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	min-width: 340px;
+	padding-right: 3px;
+	box-sizing: border-box;
+}
+
+@media all and (max-width: 767px) { 
+	.header-menu__actions {
+		flex-shrink: 0;
+	}
+}
+
+
+@media all and (min-width: 768px) { 
+	.header-menu__actions {
+		padding-right: 20px;
+	}
+}
+
+.header-menu__button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin-right: 15px;
+  margin-left: 5px;
+}
+
+.header-menu__button:hover {
+	filter: opacity(0.6);
+	transition-property: filter;
+	transition-duration: 0.25s;
+	transition-timing-function: linear; 
+}
+
+.MainServices__actions button:hover {
+	filter: opacity(0.6);
+	transition-property: filter;
+	transition-duration: 0.25s;
+	transition-timing-function: linear; 
+}
+
+@media all and (max-width: 767px) {
+	.header-menu__actions li:nth-child(1), 
+	.header-menu__actions li:nth-child(2),
+	.header-menu__actions li:nth-child(3) {
+		display: none;
+		/*visibility: hidden;*/
+	}	
+	.header-menu__actions {
+	min-width: 160px;
+	box-sizing: border-box;
+	padding-left: 0;
+	}
+}
+
+@media all and (min-width: 1120px) {
+	 .header-menu
+	 {
+		display: none;
+		/*visibility: hidden;*/
+	}	
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+
+/*--------Стили строки заголовка "Услуги и сервисы"---------------------------------------------------*/
+
+.MainServices {
+	display: flex;
+	justify-content: space-between;
+	height: 55px;
+}
+
+.MainServices__headline {
+	align-self: center;	
+}
+
+.MainServices__headline h1 {
+	font-size: 25px;
+	font-weight: 800;
+	font-style: normal;
+	margin-bottom: 5px;
+}
+
+@media all and (min-width: 768px) {
+	.MainServices__headline {
+		margin-left: -40px;
+	}
+}
+
+
+
+
+
+.MainServices__headline h1::before {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	background-image: url("../../src/img/highlight.png"); 
+	background-repeat: no-repeat;
+	margin-right: 20px;
+	width: 4px;
+	height: 45px;
+}
+
+.MainServices__actions {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	min-width: 300px;
+}
+
+@media all and (max-width: 1119px) {
+	 .MainServices__actions
+	 {
+		display: none;
+	}	
+}
+
+.MainServices__actions__inline {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.MainServices__actions__inline>span {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 8px;
+}
+
+.MainServices__actions__inline>img {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 25px;
+}
+
+.MainServices__actions__inline>button {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0;
+ 	border: none;
+    background-color: transparent;
+    cursor: pointer;
+	margin-right: 25px;
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+
+/*----Стили горизонального меню со скроллингом-----------------------------------------------------------*/
+
+
+
+
+.menu-scroll ul {
+	list-style: none;
+	min-width: 320px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+	height: auto;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	box-sizing: border-box;
+}
+
+@media all and (max-width: 767px) {
+	.menu-scroll ul {
+		flex-wrap: nowrap;	
+		overflow-x: hidden;
+		scrollbar-width: auto;
+	}
+}
+
+
+@media all and (min-width: 768px) {
+	.menu-scroll ul {
+		margin-left: -35px;
+	}
+}
+
+
+.menu-scroll ul li {
+	color: $services-text-color;
+	height: 31px;
+	width: auto;
+	flex-shrink: 0;
+	flex-grow: 0;
+	margin: 8px 5px 0px; 
+	padding: 8px 13px 0;
+}
+
+.menu-scroll ul li:nth-child(1) {
+	border: 2px solid $turquoise-color;
+	border-radius: 4px;
+	background: white; 
+}
+
+.menu-scroll ul li:hover {
+	outline: 2px solid $turquoise-color;
+	border-radius: 4px;
+}
+
+.menu-scroll a {
+	text-decoration: none;
+	color: $black-color;
+	display: inline-block;
+	vertical-align: middle;
+}	
+
+/*----Оформляем основной раздел Main---------------------------------------------------------------------*/
+
+.main {
+	display: flex;
+	padding: 0 0 20px 15px;
+}
+
+@media all and (max-width: 767px) {
+	.main {
+		display: flex;
+		flex-direction: column;
+	}	
+}
+
+.main__text-container {
+	max-height: 140px;
+	overflow: hidden;
+	padding-right: 20px;
+	
+}
+
+
+
+
+@media all and (min-width: 768px) {
+	.main__text-container {
+		margin-left: -20px;
+	}
+}
+
+
+
+
+.main__text-container_hidden {
+	max-height: 140px;
+	overflow: hidden;
+	transition: max-height 0.4s ease-in-out; 
+}
+
+.main__text-container_open {
+	max-height: 300px;
+	overflow: hidden;
+	transition: max-height 0.4s ease-in-out;
+}
+
+.main__image-container {
+	padding-right: 15px;
+}
+
+@media all and (max-width: 767px) {
+	.main__image-container {
+		padding-top: 15px;
+		margin: 0 auto;
+	}	
+}
+
+
+.main__image-container img {
+	max-height: 200px;
+}
+
+@media all and (max-width: 330px) {
+	.main__image-container img {
+		max-width: 290px;
+	}
+}
+
+.main__read-more {
+	padding: 0;
+ 	border: none;
+    background-color: transparent;
+    cursor: pointer;
+	padding: 20px 0 0 0;
+	font-size: 15px;
+    font-weight: bold;
+    opacity: 1;
+}
+
+.main__read-more>img {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.main__read-more>span {
+	font-weight: 500;
+	color: $graphite-color;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+
+.main__read-more:hover {
+	filter: opacity(0.6);
+	transition:  0.4s;
+  	animation: hover 0.4s forwards;
+	@keyframes hover {
+	  0% {
+	    transform: scale(1);
+	  }
+	  100% {
+	    transform: scale(1.05);
+	  }
+	}
+}
+
+.main__read-more>img {
+	transform: rotate(0deg);
+	transition-property: transform;
+	transition-duration: 0.4s;
+	transition-timing-function: ease-in-out;
+}
+
+
+.main__read-more_rotated>img {
+	transform: rotate(180deg);
+	transition-property: transform;
+	transition-duration: 0.4s;
+	transition-timing-function: ease-in-out;
+}
+

@@ -1,0 +1,179 @@
+.feedBack {
+	position: absolute;
+	right: -330px;
+	top: 0;
+	z-index: 1;
+	background-color: $white-color;
+	width: 320px;
+	/*max-width: 440px;*/
+	height: 100vh;
+	min-height: 620px;
+	box-shadow: -5px 0px 10px 0px rgba(34, 60, 80, 0.2);
+	
+}
+
+.feedBack__open {
+	z-index: 12;
+	transform: translateX(-330px);
+	transition-property: transform;
+	transition-duration: 0.6s;
+	transition-timing-function: ease-out;
+	
+
+}
+
+.feedBack__hidden {
+	z-index: 12;
+	transform: translateX(330px);
+	transition-property: transform;
+	transition-duration: 1.6s;
+	transition-timing-function: ease-out;
+	
+}
+
+.feedBack__static {
+	position: static;
+}
+
+
+@media all and (max-width: 767px) {
+	.feedBack__open {
+		width: 100%;
+	}
+}
+
+@media all and (min-width: 768px) {
+	.feedBack__open {
+		width: 440px;
+	}
+}
+
+
+.feedBack__wrapper {
+	height: auto;
+	padding: 0 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+/*----Стили Хедера и верхнего навигационного меню nav----------------------------------------------------*/
+
+.feedBack__nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: white;
+	min-height: 85px;
+}
+
+.feedBack__header {
+	
+}
+
+.feedBack__header h2 {
+	font-weight: 800;
+	font-size: 24px;
+	line-height: 32px;
+	position: relative
+}
+
+.feedBack__header h2::before {
+	content: "";
+	display: inline-block;
+	background-image: url("../../src/img/highlight.png"); 
+	background-repeat: no-repeat;
+	margin-right: 15px;
+	width: 4px;
+	height: 45px;
+	position: absolute;
+	left: -20px;
+	bottom: -20%;
+}
+
+.feedBack__form input,
+.feedBack__form textarea  {
+	width: 95%;
+	height: 48px;
+	padding: 0 0 0 12px; 
+	border: solid 2px $textarea-border-color;
+	border-radius: 8px;
+	margin: 8px 0 8px 0; 
+}
+
+.feedBack__form textarea {
+	height: 118px;
+	padding-top: 12px;
+	resize: none;
+}
+
+
+.feedBack__form textarea::-moz-placeholder,
+.feedBack__form input::-moz-placeholder,
+.feedBack__form textarea::-webkit-input-placeholder,
+.feedBack__form input::-webkit-input-placeholder {  
+	font-family: 'TT Lakes';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px; 
+	line-height: 24px;
+	color: $agate-gray-color;
+}
+
+
+.feedBack__form input::placeholder {
+	font-family: 'TT Lakes';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px; 
+	line-height: 24px;
+	color: $agate-gray-color;
+}
+
+.feedBack__form textarea::placeholder {
+	font-family: 'TT Lakes';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px; 
+	line-height: 24px;
+	color: $agate-gray-color;
+}
+
+.feedBack__references {
+	padding: 5px 0 23px 0;
+}
+
+
+.feedBack__references .pink {
+ 	color:  $callBack-references-color;
+}
+
+.feedBack__button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+
+.feedBack__button:hover {
+	filter: opacity(0.6);
+	transition-property: filter;
+	transition-duration: 0.25s;
+	transition-timing-function: linear; 
+}
+
+.feedBack__send {
+	display: flex;
+	justify-content: flex-end;
+	padding-bottom: 20px;
+}
+
+
+.feedBack__button img {
+	height: 40px;
+}
+
+.feedBack__send  img{
+	height: 35px;
+}
