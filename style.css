@@ -695,8 +695,11 @@ body {
   .menu-scroll ul {
     flex-wrap: nowrap;
     overflow-x: scroll;
-    overflow: hidden;
-    scrollbar-width: none; } }
+    overflow-y: hidden;
+    scrollbar-width: auto; }
+  .menu-scroll ul::-webkit-scrollbar {
+    display: none;
+    /*chrome*/ } }
 
 @media all and (min-width: 768px) {
   .menu-scroll ul {
