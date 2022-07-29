@@ -694,7 +694,7 @@ body {
 @media all and (max-width: 767px) {
   .menu-scroll ul {
     flex-wrap: nowrap;
-    overflow-x: hidden;
+    overflow-x: scroll;
     scrollbar-width: auto; } }
 
 @media all and (min-width: 768px) {
