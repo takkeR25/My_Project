@@ -39,9 +39,9 @@
 
 
 .aside__wrapper {
-  height: 100vh;
-  max-height: 1200px;
-  padding: 0 20px;
+  height: 100%;
+  //max-height: 1200px;
+  padding: 0px 20px ;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -97,7 +97,7 @@
 	flex-direction: column;
 	justify-content: space-evenly;
 	font-weight: normal;
-	height: 470px;
+	max-height: 470px;
 	margin-top: 0px;
 	flex-shrink: 0;
 	flex-grow: 0;
@@ -193,5 +193,18 @@
 @media all and (min-width: 768px) {
 	.aside__open {
 		width: 320px;
+	}
+}
+
+@media screen and (max-height: 780px){
+	.aside__nav ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		font-weight: normal;
+		height: 100%;
+		margin-top: 0px;
+		flex-shrink: 1;
+		flex-grow: 1;
 	}
 }
