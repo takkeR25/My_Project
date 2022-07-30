@@ -166,13 +166,19 @@
 
 @media all and (max-width: 1119px) {
   .aside {
-    box-shadow: 20px 0px 20px -10px #808080; } }
+    box-shadow: 20px 0px 20px -10px #808080; }
+  .aside__open {
+    width: 320px;
+    height: 100%; }
+  .aside__wrapper {
+    height: 100%; } }
 
 @media all and (max-width: 767px) {
   .aside__open {
-    width: 100%; }
+    width: 320px;
+    height: 100%; }
   .aside__wrapper {
-    height: auto; } }
+    height: 100%; } }
 
 @media all and (min-width: 768px) {
   .aside__open {
