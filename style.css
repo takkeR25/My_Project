@@ -1343,7 +1343,8 @@ body {
 
 .services__footer p {
   padding: 0px;
-  margin: 0px; }
+  margin: 0px;
+  color: #7e7e82; }
 
 /**
  * Swiper 8.1.0
