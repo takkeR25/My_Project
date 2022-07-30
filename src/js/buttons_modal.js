@@ -30,8 +30,10 @@ feedBack__buttonOpen_first.onclick = function () {
 }
 
 feedBack__buttonOpen_second.onclick = function () {
-    // console.log('Вы нажали на кнопку "Открыть форму обратной связи" на боковом меню Aside');  
+    // console.log('Вы нажали на кнопку "Открыть форму обратной связи" на боковом меню Aside'); 
     if (isFeedBackOpen == false) {
+      //document.querySelector('#login-namt').focus(); 
+      document.getElementById("login-namt").focus({preventScroll:true});
       feedBack_Open ();   
     } else {
       feedBack_Close ();
@@ -91,6 +93,7 @@ callBack__buttonOpen_first.onclick = function () {
 callBack__buttonOpen_second.onclick = function () {
     // console.log('Вы нажали на кнопку "Заказать обратный звонок" на боковом меню Aside');  
     if (isСallBackOpen == false) {
+      document.getElementById("callBack__phone").focus({preventScroll:true});
       callBack_Open ();   
     } else {
       callBack_Close ();

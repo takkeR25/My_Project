@@ -187,7 +187,10 @@
 	margin: 20px 0 20px 0;
 	z-index: 1;
 }
-
+.services__logo p {
+	padding: 0px;
+	margin: 0px;
+}
 
 @media all and (min-width: 768px) {
 	.services__logo:first-child {
@@ -299,6 +302,8 @@
 
 .services__textContainer {
 	max-width: 500px;
+	padding: 0px;
+	margin: 0px;
 }
 
 .services__commercialOffer {
@@ -310,6 +315,8 @@
 	padding-bottom: 47px !important;
 	letter-spacing: 0.1em;
 	cursor: pointer;
+	padding: 0px;
+	margin: 0px;
 }
 
 .services__commercialOffer span {
@@ -373,6 +380,10 @@
 .services__footer a {
 	text-decoration: none;
 	color: inherit;	
+}
+.services__footer p {
+	padding: 0px;
+	margin: 0px;
 }
 
 
